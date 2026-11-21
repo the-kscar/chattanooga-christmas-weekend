@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Chattanooga Christmas Weekend | December 18-20, 2026</title>
+  <!-- clawpilot-feedback-theme -->
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <script>
+    if (!new URLSearchParams(window.location.search).has("scoutTheme")) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --cp-bg: #f7f4ef;
+      --cp-bg-elevated: #fcfbf8;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-border-strong: #919191;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent: #b11f4b;
+      --cp-accent-hover: #9a1a41;
+      --cp-accent-soft: rgba(177, 31, 75, 0.08);
+      --cp-accent-fg: #ffffff;
+      --cp-success: #16a34a;
+      --cp-danger: #dc2626;
+      --cp-warning: #f59e0b;
+      --cp-link: #0078d4;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+      --cp-overlay: rgba(255, 255, 255, 0.8);
+      --cp-panel: rgba(255, 255, 255, 0.86);
+      --cp-panel-strong: rgba(255, 255, 255, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.55);
+      --cp-highlight: rgba(177, 31, 75, 0.12);
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --cp-bg: #3d3b3a;
+      --cp-bg-elevated: #343231;
+      --cp-surface: #292929;
+      --cp-surface-soft: #2e2e2e;
+      --cp-border: #474747;
+      --cp-border-strong: #5f5f5f;
+      --cp-text: #dedede;
+      --cp-text-muted: #919191;
+      --cp-text-soft: #b0b0b0;
+      --cp-accent: #fd8ea1;
+      --cp-accent-hover: #fb7b91;
+      --cp-accent-soft: rgba(253, 142, 161, 0.14);
+      --cp-accent-fg: #1a1a1a;
+      --cp-success: #4ade80;
+      --cp-danger: #f87171;
+      --cp-warning: #fbbf24;
+      --cp-link: #4da6ff;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      --cp-overlay: rgba(41, 41, 41, 0.88);
+      --cp-panel: rgba(41, 41, 41, 0.72);
+      --cp-panel-strong: rgba(41, 41, 41, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.04);
+      --cp-highlight: rgba(253, 142, 161, 0.12);
+    }
+    :root {
+      --cp-bg: #faf6eb;
+      --cp-bg-elevated: #f4efdf;
+      --cp-surface: #fffcf4;
+      --cp-surface-soft: #eee9da;
+      --cp-border: #d6ddce;
+      --cp-border-strong: #80947b;
+      --cp-text: #263e30;
+      --cp-text-muted: #52634f;
+      --cp-text-soft: #61715d;
+      --cp-accent: #245c3d;
+      --cp-accent-hover: #19482e;
+      --cp-accent-soft: rgba(36, 92, 61, 0.07);
+      --cp-accent-fg: #fffcf4;
+      --cp-success: #638343;
+      --cp-danger: #ad333b;
+      --cp-warning: #ab8535;
+      --cp-link: #245c3d;
+      --cp-shadow: 0 18px 48px rgba(38, 62, 48, 0.1);
+      --cp-overlay: rgba(250, 246, 235, 0.9);
+      --cp-panel: rgba(255, 252, 244, 0.9);
+      --cp-panel-strong: rgba(255, 252, 244, 0.97);
+      --cp-sheen: rgba(255, 252, 244, 0.55);
+      --cp-highlight: rgba(171, 133, 53, 0.1);
+    }
+    html[data-theme="dark"] {
+      --cp-bg: #172e24;
+      --cp-bg-elevated: #1b3529;
+      --cp-surface: #213e30;
+      --cp-surface-soft: #294737;
+      --cp-border: #44624b;
+      --cp-border-strong: #91a783;
+      --cp-text: #f4ecd8;
+      --cp-text-muted: #c6ceb5;
+      --cp-text-soft: #c6ceb5;
+      --cp-accent: #b5cf9a;
+      --cp-accent-hover: #c9dfb3;
+      --cp-accent-soft: rgba(181, 207, 154, 0.12);
+      --cp-accent-fg: #172e24;
+      --cp-success: #91b565;
+      --cp-danger: #e99691;
+      --cp-warning: #dcc17b;
+      --cp-link: #c9dfb3;
+      --cp-shadow: 0 18px 48px rgba(15, 35, 24, 0.25);
+      --cp-overlay: rgba(23, 46, 36, 0.9);
+      --cp-panel: rgba(33, 62, 48, 0.9);
+      --cp-panel-strong: rgba(33, 62, 48, 0.97);
+      --cp-sheen: rgba(244, 236, 216, 0.06);
+      --cp-highlight: rgba(220, 193, 123, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; background: var(--cp-bg); color: var(--cp-text); font: 16px/1.6 "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; }
+    a { color: var(--cp-link); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 4px; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: auto; }
+    .top { position: sticky; top: 0; z-index: 10; background: var(--cp-bg-elevated); border-bottom: 1px solid var(--cp-border); }
+    .top::before { content: ""; display: block; height: 6px; background: repeating-linear-gradient(135deg, var(--cp-danger) 0 12px, var(--cp-surface) 12px 24px); }
+    .top .wrap { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding-block: 12px; }
+    .brand { color: var(--cp-text); font-weight: 700; text-decoration: none; }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { color: var(--cp-text-muted); text-decoration: none; font-size: 14px; }
+    .tools { display: flex; gap: 8px; }
+    button { border: 1px solid var(--cp-border); border-radius: 0.625rem; background: var(--cp-surface); color: var(--cp-text); padding: 8px 12px; }
+    button:hover { border-color: var(--cp-accent); }
+    .hero { padding: 24px 32px 32px; margin-top: 24px; border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-bg-elevated); }
+    .holiday-garland { width: 100%; height: 88px; display: block; color: var(--cp-accent); }
+    .holiday-hero { display: flex; align-items: center; gap: 32px; }
+    .holiday-copy { flex: 1; min-width: 0; }
+    .holiday-art { width: 320px; flex-shrink: 0; color: var(--cp-accent); }
+    .holiday-copy h1 { font-style: normal; font-weight: 600; letter-spacing: -.035em; color: var(--cp-accent); }
+    .holiday-garland, .holiday-art, .holiday-village { --cp-accent: var(--cp-danger); }
+    .holiday-note { display: inline-flex; gap: 8px; align-items: center; color: var(--cp-accent); font-weight: 600; margin-top: 8px; }
+    .holiday-note svg { width: 20px; height: 20px; }
+    .day-head { background: var(--cp-bg-elevated); }
+    .day-head .eyebrow::before { content: "\\2726  "; color: var(--cp-success); }
+    .day-head { border-top: 3px solid var(--cp-accent); }
+    .holiday-village { width: min(560px, 100%); height: 120px; display: block; margin: 8px auto 16px; }
+    .eyebrow { color: var(--cp-accent); text-transform: uppercase; letter-spacing: .14em; font-weight: 700; font-size: 12px; }
+    h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.08; letter-spacing: -.04em; margin: 12px 0 20px; max-width: 850px; }
+    h2 { font-size: 28px; letter-spacing: -.02em; line-height: 1.25; margin: 0 0 8px; }
+    h3 { font-size: 21px; line-height: 1.3; margin: 8px 0 12px; }
+    p { margin: 0 0 12px; }
+    .lead { font-size: 19px; color: var(--cp-text-muted); max-width: 820px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .chip, .tag { display: inline-block; border-radius: 0.625rem; padding: 4px 10px; font-size: 12px; font-weight: 600; background: var(--cp-surface-soft); color: var(--cp-text-muted); }
+    .chip { border: 1px solid var(--cp-border); font-size: 14px; padding: 6px 12px; }
+    .tag { margin: 0 4px 4px 0; }
+    .accent { background: var(--cp-accent-soft); color: var(--cp-accent); }
+    .notice { border: 1px solid var(--cp-border); border-left: 4px solid var(--cp-warning); background: var(--cp-surface); padding: 20px 24px; border-radius: 0.625rem; margin: 16px 0; }
+    .notice strong { color: var(--cp-text); }
+    .notice.danger { border-left-color: var(--cp-danger); }
+    .notice p:last-child { margin-bottom: 0; }
+    section { padding: 28px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .muted { color: var(--cp-text-muted); }
+    .small { font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .card { border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-surface); padding: 24px; }
+    .card.featured { border: 2px solid var(--cp-accent); padding: 23px; }
+    .card .links { margin-top: 16px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+    .stat { background: var(--cp-surface); border: 1px solid var(--cp-border); border-radius: 0.625rem; padding: 16px; }
+    .stat b { font-size: 25px; display: block; line-height: 1.3; }
+    .stat span { font-size: 12px; color: var(--cp-text-muted); }
+    .day { border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-surface); margin-top: 20px; overflow: hidden; }
+    .day-head { padding: 24px; background-color: var(--cp-bg-elevated); border-bottom: 1px solid var(--cp-border); }
+    .day-head h3 { margin: 4px 0; }
+    .day-head p { margin-bottom: 0; color: var(--cp-text-muted); }
+    .timeline { padding: 0 24px; }
+    .event { display: grid; grid-template-columns: 160px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--cp-border); }
+    .event:last-child { border-bottom: 0; }
+    .time { font-size: 14px; font-weight: 700; color: var(--cp-accent); }
+    .event h4 { margin: 0 0 4px; font-size: 17px; }
+    .event p { margin-bottom: 0; color: var(--cp-text-muted); }
+    .event .tag { margin-top: 8px; }
+    .day-note { margin: 0; padding: 20px 24px; border-top: 1px solid var(--cp-border); background: var(--cp-accent-soft); }
+    .scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; background: var(--cp-bg-elevated); color: var(--cp-text-muted); font-weight: 600; }
+    th, td { padding: 16px 20px; vertical-align: top; border-bottom: 1px solid var(--cp-border); }
+    tr:last-child td { border-bottom: 0; }
+    .race-table td:first-child { font-weight: 600; white-space: nowrap; }
+    .race-table { min-width: 720px; }
+    .schedule-table { min-width: 760px; }
+    .schedule-table td:first-child { width: 145px; color: var(--cp-accent); font-weight: 700; }
+    .schedule-table td:nth-child(2), .schedule-table td:nth-child(3) { width: 42%; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filters button[aria-pressed="true"] { background: var(--cp-accent); color: var(--cp-accent-fg); border-color: var(--cp-accent); }
+    .checklist { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 24px; margin-top: 16px; }
+    .check { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--cp-border); }
+    .check input { accent-color: var(--cp-accent); width: 19px; height: 19px; flex-shrink: 0; margin-top: 4px; }
+    .check label { cursor: pointer; }
+    .check label b { display: block; }
+    .check label span { color: var(--cp-text-muted); font-size: 13px; }
+    .check input:checked + label { text-decoration: line-through; color: var(--cp-text-muted); }
+    progress { accent-color: var(--cp-accent); width: 160px; height: 12px; }
+    .check-progress { display: flex; gap: 12px; align-items: center; color: var(--cp-text-muted); font-size: 13px; }
+    .sources { display: flex; gap: 8px 24px; flex-wrap: wrap; }
+    .sources a { font-size: 14px; }
+    footer { border-top: 1px solid var(--cp-border); padding: 24px 0 40px; color: var(--cp-text-muted); font-size: 13px; }
+    [hidden] { display: none !important; }
+    @media (max-width: 850px) {
+      .top nav { display: none; }
+      .holiday-art { width: 200px; }
+      .grid { grid-template-columns: 1fr; }
+      .grid.two { grid-template-columns: 1fr; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: calc(100% - 24px); }
+      .hero { padding: 16px; }
+      .holiday-hero { flex-direction: column; gap: 8px; }
+      .holiday-art { display: block; width: min(280px, 85%); align-self: center; }
+      .holiday-garland { height: 48px; }
+      .brand { font-size: 14px; }
+      .event { grid-template-columns: 1fr; gap: 4px; }
+      .section-head { flex-direction: column; align-items: flex-start; }
+      .checklist { grid-template-columns: 1fr; }
+      .card, .day-head { padding: 20px; }
+      .tools button { font-size: 13px; padding: 6px 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      :root, html[data-theme="dark"] { color-scheme: light; --cp-bg: #faf6eb; --cp-bg-elevated: #f4efdf; --cp-surface: #fffcf4; --cp-text: #263e30; --cp-text-muted: #52634f; --cp-border: #d6ddce; --cp-accent: #245c3d; --cp-accent-soft: rgba(36,92,61,0.07); --cp-link: #245c3d; --cp-success: #638343; --cp-danger: #ad333b; --cp-warning: #ab8535; }
+      .top, .filters, .no-print { display: none !important; }
+      .wrap { width: 100%; }
+      .hero { padding-top: 0; background-image: none; }
+      .holiday-art { width: 180px; }
+      h1 { font-size: 36px; }
+      section { padding-block: 16px; }
+      .card, .event, tr, .notice { break-inside: avoid; }
+      .scroll { overflow: visible; }
+      table { min-width: 0 !important; font-size: 11px; }
+      th, td { padding: 8px; }
+      .card { padding: 16px; }
+      .day { overflow: visible; }
+      a { text-decoration: underline; }
+      .day[hidden] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-cf-change="ch-traditional-christmas-palette">
+  <header class="top">
+    <div class="wrap">
+      <a href="#overview" class="brand" data-cf-change="ch-christmas-brand">CHATTANOOGA / CHRISTMAS WEEKEND</a>
+      <nav aria-label="Page sections" data-cf-change="ch-family-first-navigation">
+        <a href="#stay">Stay</a><a href="#itinerary">Itinerary</a><a href="#dining">Dining</a><a href="#checklist">Checklist</a><a href="#race">Race details</a>
+      </nav>
+      <div class="tools"><button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button><button id="print" type="button">Print / PDF</button></div>
+    </div>
+  </header>
+  <main class="wrap" id="overview">
+    <div class="hero" data-cf-change="ch-christmas-family-welcome">
+      <svg class="holiday-garland" viewBox="0 0 1080 88" aria-hidden="true" focusable="false" data-cf-change="ch-mischievous-ornaments">
+        <path d="M0 8 Q135 64 270 8 Q405 64 540 8 Q675 64 810 8 Q945 64 1080 8" fill="none" stroke="var(--cp-success)" stroke-width="4"/>
+        <g fill="var(--cp-accent)" stroke="var(--cp-accent)" stroke-width="2">
+          <path d="M135 36v14 M405 36v14 M675 36v14 M945 36v14"/>
+          <circle cx="135" cy="63" r="15"/><circle cx="675" cy="63" r="15"/>
+        </g>
+        <g fill="var(--cp-success)" stroke="var(--cp-success)" stroke-width="2">
+          <ellipse cx="405" cy="65" rx="12" ry="18" transform="rotate(-14 405 65)"/><ellipse cx="945" cy="65" rx="12" ry="18" transform="rotate(14 945 65)"/>
+        </g>
+        <g fill="none" stroke="var(--cp-surface)" stroke-width="3">
+          <path d="M121 60q14-7 28 0 M391 62l28 8 M661 60q14-7 28 0 M931 70l28-8"/>
+        </g>
+        <g fill="var(--cp-bg)" stroke="var(--cp-accent)" stroke-width="2">
+          <path d="m270 17 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+          <path d="m540 17 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+          <path d="m810 17 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+        </g>
+      </svg>
+      <div class="holiday-hero">
+        <div class="holiday-copy">
+          <div class="eyebrow">Chattanooga, Tennessee / December 18-20, 2026</div>
+          <h1 data-cf-change="ch-playful-christmas-heading">A Chattanooga<br>Christmas weekend.</h1>
+          <p class="lead">Christmas lights, mountain views, a holiday market, and a steakhouse celebration. A family getaway from Alpharetta, with a downtown home base and a Saturday morning trail race.</p>
+          <div class="holiday-note" data-cf-change="ch-playful-christmas-note"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2v20 M3.3 7l17.4 10 M3.3 17 20.7 7 M9 4l3 3 3-3 M9 20l3-3 3 3" fill="none" stroke="var(--cp-warning)" stroke-width="1.5" stroke-linecap="round"/></svg>December 18-20 &middot; Lights, trails &amp; time together.</div>
+        </div>
+        <svg class="holiday-art" viewBox="0 0 320 370" aria-hidden="true" focusable="false" data-cf-change="ch-curly-christmas-tree">
+          <circle cx="158" cy="183" r="143" fill="var(--cp-accent-soft)"/>
+          <path d="M13 300q64-38 125-8t169-9v67H13z" fill="var(--cp-surface)" stroke="var(--cp-border)" stroke-width="2"/>
+          <path d="M168 76c20-50 75-39 64-8-5 15-31 16-33 3 17 5 21-5 11-9-13-6-32 9-29 24l35 52-23-4 42 57-25-5 42 58-31-7 38 57H76l38-53-30 6 38-61-23 7 38-59-22 5 39-55z" fill="var(--cp-success)" stroke="var(--cp-text)" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M162 291v33" stroke="var(--cp-text)" stroke-width="8" stroke-linecap="round"/>
+          <path d="M141 134q29 25 68 5 M119 190q49 28 111 10 M103 250q66 28 144 6" fill="none" stroke="var(--cp-surface)" stroke-width="5" stroke-linecap="round"/>
+          <g fill="var(--cp-accent)" stroke="var(--cp-surface)" stroke-width="2">
+            <circle cx="164" cy="119" r="9"/><circle cx="153" cy="171" r="11"/><circle cx="201" cy="183" r="8"/><circle cx="127" cy="225" r="9"/><circle cx="178" cy="246" r="12"/><circle cx="227" cy="267" r="8"/>
+          </g>
+          <path d="m225 29 4 12 13 1-10 8 3 13-10-7-11 7 4-13-10-8 13-1z" fill="var(--cp-accent)" transform="rotate(18 225 45)"/>
+          <path d="M44 286v-57c0-24 32-24 32 0v11" fill="none" stroke="var(--cp-accent)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M44 242l1-9 M45 220l8-8 M63 213l8 9 M44 259v8 M44 279v8" stroke="var(--cp-surface)" stroke-width="6"/>
+          <g stroke="var(--cp-text)" stroke-width="2">
+            <path d="m17 291 42-9 4 55-42 7z" fill="var(--cp-accent)"/>
+            <path d="m239 310 52-13 12 42-53 12z" fill="var(--cp-success)"/>
+            <path d="m86 322 42 4-3 28-42-4z" fill="var(--cp-accent)"/>
+          </g>
+          <g fill="none" stroke="var(--cp-surface)" stroke-width="4">
+            <path d="M38 287l5 54 M19 313l42-7 M263 303l13 43 M245 330l52-13 M105 324l-3 29 M85 337l41 4"/>
+            <path d="M41 285c-37-30-37 3 0 0 28-41 35-6 0 0 M267 303c-32-24-29 11 0 0 14-39 29-16 0 0"/>
+          </g>
+          <g fill="var(--cp-surface)" stroke="var(--cp-border-strong)" stroke-width="1">
+            <circle cx="44" cy="90" r="5"/><circle cx="91" cy="46" r="4"/><circle cx="278" cy="100" r="6"/><circle cx="274" cy="219" r="4"/><circle cx="30" cy="175" r="4"/>
+          </g>
+          <path d="M68 112h14 M75 105v14 M269 150h18 M278 141v18" fill="none" stroke="var(--cp-accent)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="chips"><span class="chip">Friday-Sunday</span><span class="chip">3+ adults</span><span class="chip">2 hotel nights</span><span class="chip">All times Eastern</span><span class="chip">Christmas lights &amp; holiday market</span><span class="chip">Nothing booked</span></div>
+    </div>
+
+    <section id="stay">
+      <div class="section-head"><div><div class="eyebrow">Your home base</div><h2>Stay downtown. Start early.</h2><p class="muted">Check in Friday December 18; check out Sunday December 20.</p></div></div>
+      <div class="grid">
+        <article class="card featured">
+          <span class="tag accent">Your preferred hotel</span>
+          <h3>The Hotel Chalet</h3>
+          <p>Stay at the historic Chattanooga Choo Choo, with Southside restaurants close by and a distinctive boutique setting.</p>
+          <p><strong>Compare:</strong> Chalet Double Queen, officially listed for four guests, or two separate rooms for privacy and better pre-race sleep.</p>
+          <p class="small muted">Confirm total price, parking charges, breakfast arrangements, cancellation terms, and actual adult occupancy. Do not assume a sleeper carriage provides three adult beds.</p>
+          <div class="links"><a href="https://thehotelchalet.com/lodging/" target="_blank" rel="noopener noreferrer">Rooms &amp; sleeping arrangements</a> &middot; <a href="https://reservations.thehotelchalet.com/?chain=31107&amp;hotel=42145" target="_blank" rel="noopener noreferrer">Check rates</a></div>
+        </article>
+        <article class="card">
+          <span class="tag">Best shared-suite alternative</span>
+          <h3>SpringHill Suites</h3>
+          <p>Downtown/Cameron Harbor. Riverfront setting, extra space for gear, and complimentary breakfast.</p>
+          <p><strong>Compare:</strong> A two-queen studio suite with sofa/trundle sleeping space; verify the exact layout for your group.</p>
+          <p class="small muted">Published parking: $18/day, subject to change. A third sleeping surface is only useful if it comfortably fits an adult.</p>
+          <div class="links"><a href="https://www.marriott.com/en-us/hotels/chash-springhill-suites-chattanooga-downtown-cameron-harbor/overview/" target="_blank" rel="noopener noreferrer">Hotel &amp; booking</a></div>
+        </article>
+        <article class="card">
+          <span class="tag">Straightforward central option</span>
+          <h3>Hampton Inn &amp; Suites</h3>
+          <p>Chattanooga/Downtown. Convenient for city sightseeing, with complimentary breakfast.</p>
+          <p><strong>Compare:</strong> One two-queen room or two rooms. Two rooms let you get to bed early while your companions keep their own schedule.</p>
+          <p class="small muted">Published parking: $18/day, subject to change. Check the refundable total rather than the headline nightly rate.</p>
+          <div class="links"><a href="https://www.hilton.com/en/hotels/chadnhx-hampton-suites-chattanooga-downtown/" target="_blank" rel="noopener noreferrer">Hotel &amp; booking</a></div>
+        </article>
+      </div>
+      <div class="notice"><p><strong>Booking brief:</strong> Enter the actual number of adults; compare one shared room against two rooms, including taxes, parking, and extra-person fees. Request a quiet room away from elevators. Bring your own race breakfast: hotel breakfast may start after you need to leave. Allow <strong>30-40 minutes</strong> for Saturday's drive to Covenant rather than relying on an ideal 20-minute trip.</p></div>
+    </section>
+
+    <section id="itinerary">
+      <div class="section-head">
+        <div><div class="eyebrow">Three days / two tracks on race morning</div><h2>Your weekend itinerary</h2><p class="muted">Keep the race and recovery fixed. Let sightseeing flex around them.</p></div>
+        <div class="filters" role="group" aria-label="Show itinerary days">
+          <button type="button" data-day="all" aria-pressed="true">All days</button>
+          <button type="button" data-day="friday" aria-pressed="false">Friday</button>
+          <button type="button" data-day="saturday" aria-pressed="false">Saturday</button>
+          <button type="button" data-day="sunday" aria-pressed="false">Sunday</button>
+        </div>
+      </div>
+      <article class="day" data-panel="friday">
+        <div class="day-head"><div class="eyebrow">Friday / December 18</div><h3>Travel, trains, packet pickup, pasta</h3><p>Mid-morning departure. An easy afternoon. Back at the hotel early.</p></div>
+        <div class="timeline">
+          <div class="event"><div class="time">9:30 a.m.</div><div><h4>Leave Alpharetta</h4><p>Budget roughly three hours plus traffic and a short stop. Use live navigation rather than routing through Atlanta by default. Travel times are estimates.</p></div></div>
+          <div class="event"><div class="time">12:30-1:15 p.m.</div><div><h4>Lunch at <a href="https://publichousechattanooga.com/" target="_blank" rel="noopener noreferrer">Public House</a></h4><p>A downtown lunch to start the weekend. Keep your meal familiar and carbohydrate-forward. This is the itinerary's only Public House meal.</p></div></div>
+          <div class="event"><div class="time">1:30-3:15 p.m.</div><div><h4><a href="https://www.tvrail.com/train-rides/missionary-ridge-local/" target="_blank" rel="noopener noreferrer">Tennessee Valley Railroad Museum</a></h4><p>Grand Junction Depot, <strong>4119 Cromwell Road</strong>. Target an approximately 2 p.m. Missionary Ridge Local departure: a narrated train ride, turntable demonstration, and restoration-shop visit, about 65 minutes total. Published adult fare: $26. Arrive early for boarding.</p><span class="tag">Departure time NOT verified</span><span class="tag">Reserve before committing</span></div></div>
+          <div class="event"><div class="time">3:30 p.m.</div><div><h4>Hotel check-in</h4><p>Unpack and collect what you need for packet pickup. Check-in time is a target, not a guaranteed early-room arrangement. If travel runs late, prioritize pickup over sightseeing.</p></div></div>
+          <div class="event"><div class="time">4-4:30 p.m.</div><div><h4>Race packet pickup at Fleet Feet</h4><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Fleet+Feet+307+Manufacturers+Road+Chattanooga" target="_blank" rel="noopener noreferrer">307 Manufacturers Road</a>. Official pickup window runs until 6:45 p.m.; aim to finish early.</p><span class="tag accent">Confirmed 2026 pickup window</span></div></div>
+          <div class="event"><div class="time">5-6:15 p.m.</div><div><h4>Pre-race dinner at <a href="https://bluffviewartdistrictchattanooga.com/tonys-pasta-shop" target="_blank" rel="noopener noreferrer">Tony's Pasta Shop &amp; Trattoria</a></h4><p><strong>212 High Street.</strong> Fresh pasta, a familiar lighter sauce, and complimentary bread. Friday hours: 11 a.m.-10 p.m. Tony's does <strong>not</strong> accept reservations or call-ahead seating, so arrive early.</p></div></div>
+          <div class="event"><div class="time">6:30-8:30 p.m.</div><div><h4>Prepare, wind down, sleep</h4><p>Lay out breakfast, hydration, fuel, clothing, and bib. Give your companions a dry finish bag. Set alarms and confirm the exact start/finish pin.</p></div></div>
+        </div>
+        <p class="day-note"><strong>Train fallback:</strong> If Friday has no suitable departure, visit the <a href="https://www.choochoo.com/" target="_blank" rel="noopener noreferrer">Choo Choo</a> instead and move the train into Sunday's early-afternoon window. Do not let an excursion jeopardize packet pickup or dinner.</p>
+      </article>
+
+      <article class="day" data-panel="saturday">
+        <div class="day-head"><div class="eyebrow">Saturday / December 19</div><h3>Race morning, mountain sightseeing, steak dinner</h3><p>Your companions keep the car and recovery bag, then return to the finish by 11:30 a.m.</p></div>
+        <div class="scroll">
+          <table class="schedule-table">
+            <caption class="small muted" style="text-align:left;padding:16px 20px">Race morning: separate plans, one fixed reunion point</caption>
+            <thead><tr><th scope="col">Time</th><th scope="col">Runner</th><th scope="col">Companions</th></tr></thead>
+            <tbody>
+              <tr><td>4:45-5 a.m.</td><td>Wake and eat your practiced pre-run breakfast.</td><td>Sleep longer; the driver should be ready for departure.</td></tr>
+              <tr><td>5:45 a.m.</td><td colspan="2">Leave together for Covenant College. Allow 30-40 minutes of driving and additional parking/check-in time. Bring warm layers.</td></tr>
+              <tr><td>6:20-7:15 a.m.</td><td>Park, check in before 7 a.m., use toilets, and warm up.</td><td>Stay with the runner and identify the exact finish meeting point.</td></tr>
+              <tr><td>7:20 a.m.</td><td>Official pre-race announcements.</td><td>Stay for the start.</td></tr>
+              <tr><td>7:30 a.m.</td><td><strong>18-mile race starts.</strong></td><td>Depart once runners clear. Keep the car and dry finish bag.</td></tr>
+              <tr><td>8:30-10 a.m.</td><td>On course; first published cutoff is 9:09 a.m. at mile 6.14.</td><td><a href="https://www.rubyfalls.com/" target="_blank" rel="noopener noreferrer">Ruby Falls</a>: target an 8:30 a.m. cave tour, subject to availability. Arrive early; allow up to 90 minutes.</td></tr>
+              <tr><td>10:15-11 a.m.</td><td>On course; Reflection Riding cutoff is 10:26 a.m. at mile 10.97.</td><td><a href="https://www.nps.gov/chch/learn/lookout-mountain.htm" target="_blank" rel="noopener noreferrer">Point Park</a>: overlooks, Civil War history, and a short paved walk. Gate opens 8:30 a.m.; admission $10/adult age 16+.</td></tr>
+              <tr><td>11-11:30 a.m.</td><td>Approaching the finish, depending on pace.</td><td>Return to Covenant. <strong>Drop Point Park if Ruby Falls runs late.</strong></td></tr>
+              <tr><td>11:30 a.m.-12:26 p.m.</td><td>Finish meetup window. <strong>12:26 p.m. is the published mile-18.44 cutoff.</strong></td><td>Wait at the finish with dry clothes, shoes, food, and drink. Do not rely solely on a text from the course.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="day-note"><strong>Ruby Falls practical note:</strong> Just under a mile of walking, uneven/wet paved surfaces, and up to 90 minutes standing/walking. Cave temperature is around 60&deg;F. <a href="https://www.rubyfalls.com/ticketing/" target="_blank" rel="noopener noreferrer">Book timed admission</a>; the proposed 8:30 slot is not confirmed. This schedule prioritizes the finish meetup over completing both attractions.</p>
+        <div class="timeline">
+          <div class="event"><div class="time">12:30-1:30 p.m.</div><div><h4>Recover and have an easy lunch</h4><p>Change into dry clothes and refuel. <a href="https://www.niedlovs.com/" target="_blank" rel="noopener noreferrer">Niedlov's</a> is a Southside bakery/sandwich option; current published Saturday hours run until 4 p.m. Takeout is fine.</p></div></div>
+          <div class="event"><div class="time">1:30-4 p.m.</div><div><h4>Hotel shower and real rest</h4><p>Return to The Chalet or your selected hotel. Keep this recovery block protected; no extra hiking here.</p><span class="tag accent">Protected recovery time</span></div></div>
+          <div class="event"><div class="time">4:30-5:30 p.m.</div><div><h4>Post-race steak dinner: choose one</h4><p><strong>First choice:</strong> <a href="https://www.hennens.net/" target="_blank" rel="noopener noreferrer">Hennen's Steakhouse</a>, 193 Chestnut Street, for a classic celebration. <strong>Alternative:</strong> <a href="https://www.mainstreetmeatschatt.com/" target="_blank" rel="noopener noreferrer">Main Street Meats</a>, a casual Southside butcher-driven restaurant convenient to The Chalet. Details below.</p><span class="tag">Not booked</span></div></div>
+          <div class="event"><div class="time">Around 6-7:30 p.m.</div><div><h4><a href="https://www.seerockcity.com/enchanted-garden-of-lights/" target="_blank" rel="noopener noreferrer">Rock City: Enchanted Garden of Lights</a></h4><p>Combine the Rock City garden attraction with its seasonal illuminated walk. Published 2026 holiday calendar includes this weekend. Reserve evening admission; exact entry availability is unverified. If dinner runs long, choose a later admission window.</p><p>There are steps and uneven surfaces. Your participation is optional after the race; companions can go while you rest. This is a garden attraction, not a separate wilderness hike.</p></div></div>
+          <div class="event"><div class="time">Around 8 p.m.</div><div><h4>Return to the hotel</h4><p>Relax and keep Sunday flexible based on how you feel.</p></div></div>
+        </div>
+      </article>
+
+      <article class="day" data-panel="sunday">
+        <div class="day-head"><div class="eyebrow">Sunday / December 20</div><h3>Mountain views, Holiday Market, Choo Choo</h3><p>A flexible final day, with a late-afternoon drive home.</p></div>
+        <div class="timeline">
+          <div class="event"><div class="time">7:30-8 a.m.</div><div><h4>Breakfast, packing, checkout plan</h4><p>Have hotel breakfast or your own food. Arrange luggage storage or load the car in line with the hotel's checkout and parking policies. Niedlov's is currently listed as closed Sundays.</p></div></div>
+          <div class="event"><div class="time">8:30-10:45 a.m.</div><div><h4><a href="https://www.visitchattanooga.com/blog/post/hiking-from-cravens-house-to-sunset-rock/" target="_blank" rel="noopener noreferrer">Cravens House to Sunset Rock</a></h4><p>Allow roughly two hours plus photographs for the approximately three-mile out-and-back. Follow Cravens Trail toward Bluff Trail, then the Sunset Rock spur; use the <a href="https://www.nps.gov/chch/planyourvisit/upload/Lookout-Mountain-Battlefield-Trail-Map.pdf" target="_blank" rel="noopener noreferrer">NPS trail map</a> for navigation. Rocky terrain, stairs, and exposed cliff edges.</p><p><strong>Runner option:</strong> Skip this hike, sleep in, and meet everyone downtown. Cravens House grounds are free; a December interior tour is not promised. Skip the hike if trails are icy or conditions are poor.</p><span class="tag">Optional for the runner</span></div></div>
+          <div class="event"><div class="time">11:15 a.m.-12:15 p.m.</div><div><h4><a href="https://www.chattanoogamarket.com/event/holiday-market-dec19" target="_blank" rel="noopener noreferrer">Chattanooga Holiday Market</a></h4><p>Chattanooga Convention Center, <strong>1 Carter Street</strong>. Free indoor market with local makers and gifts. Sunday December 20 hours: <strong>11 a.m.-5 p.m.</strong> Saturday December 19 hours: <strong>10 a.m.-5 p.m.</strong> Paid parking nearby. This is the confirmed holiday market, not an assumption that the regular outdoor market runs in December.</p><span class="tag accent">Confirmed 2026 dates &amp; hours</span></div></div>
+          <div class="event"><div class="time">12:30-1:30 p.m.</div><div><h4>Brunch at <a href="https://www.soconfusion.com/" target="_blank" rel="noopener noreferrer">State of Confusion</a></h4><p>A Southside brunch/lunch before the last outing. Current published weekend brunch window: 10 a.m.-2:30 p.m. Reserve or check seating availability.</p></div></div>
+          <div class="event"><div class="time">1:45-2:45 p.m.</div><div><h4><a href="https://www.choochoo.com/" target="_blank" rel="noopener noreferrer">Historic Chattanooga Choo Choo</a></h4><p>Explore the station/gardens and Southside surroundings, subject to access that day. Especially convenient if staying at The Chalet. The historic station is <strong>separate from the operating railroad museum</strong> on Cromwell Road. If you visited Friday, use this hour for more market time or a relaxed city walk.</p></div></div>
+          <div class="event"><div class="time">3-3:30 p.m.</div><div><h4>One last easy city stop</h4><p>Optional short riverfront stroll, coffee, or market browsing. Retrieve luggage and prepare for the drive.</p></div></div>
+          <div class="event"><div class="time">4 p.m.</div><div><h4>Drive home to Alpharetta</h4><p>Budget roughly three hours plus traffic and stops: an estimated 7-8 p.m. arrival home. Let a companion drive if you're tired. No time-zone change.</p></div></div>
+        </div>
+        <p class="day-note"><strong>Sunday train fallback:</strong> If Friday's train does not work, book a suitable early-afternoon <a href="https://www.tvrail.com/train-rides/missionary-ridge-local/" target="_blank" rel="noopener noreferrer">Missionary Ridge Local</a> departure. Shorten the Choo Choo stop and drop the riverfront stroll. Aim to finish at the museum by 3:30 p.m.; exact December 20 departures remain unverified.</p>
+      </article>
+    </section>
+
+    <section id="dining">
+      <div class="section-head"><div><div class="eyebrow">Fuel first / celebrate after</div><h2>The restaurant plan</h2><p class="muted">Public House appears once. Saturday is a steak dinner, not another Italian meal.</p></div></div>
+      <div class="grid two">
+        <article class="card featured"><span class="tag accent">Saturday steak / first choice</span><h3><a href="https://www.hennens.net/" target="_blank" rel="noopener noreferrer">Hennen's Steakhouse</a></h3><p>Classic celebratory steakhouse serving hand-carved, aged Certified Angus Beef, with seafood alternatives for companions.</p><p><strong>193 Chestnut Street.</strong> A short drive from The Chalet. Saturday hours: <strong>4-10 p.m.</strong> Target a <strong>4:30 p.m. reservation</strong> once your group size is settled.</p><p class="small muted">Dinner and travel may exceed an hour; allow flexibility in Rock City's entry time. Phone: <a href="tel:4236345160">423-634-5160</a>. No reservation made.</p></article>
+        <article class="card"><span class="tag">Saturday steak / alternative</span><h3><a href="https://www.mainstreetmeatschatt.com/" target="_blank" rel="noopener noreferrer">Main Street Meats</a></h3><p>Southside butcher shop and restaurant, <strong>217 East Main Street</strong>, convenient to The Chalet. More casual and neighborhood-focused than a traditional steakhouse.</p><p>Rotating steak cuts reflect whole-animal butchery and product availability. Check the current <a href="https://www.mainstreetmeatschatt.com/chattanooga-restaurant-menu" target="_blank" rel="noopener noreferrer">dinner menu</a>, dinner-service timing, and seating arrangements before committing to 4:30 p.m.</p><p class="small muted">Choose this instead of Hennen's, not in addition to it. No table or particular steak cut confirmed.</p></article>
+        <article class="card"><span class="tag">Friday / pre-race dinner</span><h3><a href="https://bluffviewartdistrictchattanooga.com/tonys-pasta-shop" target="_blank" rel="noopener noreferrer">Tony's Pasta Shop</a></h3><p>Target 5 p.m. Friday. Fresh pasta and complimentary bread; choose a lighter sauce and familiar food. Friday hours: 11 a.m.-10 p.m.</p><p><strong>No reservations or call-ahead seating.</strong> Arrive early. If you want a fixed dinner reservation, <a href="https://alleiarestaurant.com/" target="_blank" rel="noopener noreferrer">Alleia</a> remains an Italian backup for Friday only.</p></article>
+        <article class="card"><span class="tag">Other meals</span><h3>Lunches &amp; Sunday brunch</h3><p><strong>Friday lunch:</strong> <a href="https://publichousechattanooga.com/" target="_blank" rel="noopener noreferrer">Public House</a>, 12:30 p.m.</p><p><strong>Saturday easy lunch:</strong> <a href="https://www.niedlovs.com/" target="_blank" rel="noopener noreferrer">Niedlov's</a> or convenient takeout after the race. Currently closed Sundays.</p><p><strong>Sunday brunch:</strong> <a href="https://www.soconfusion.com/" target="_blank" rel="noopener noreferrer">State of Confusion</a>, 12:30 p.m.; published weekend brunch ends 2:30 p.m.</p></article>
+      </div>
+      <div class="notice"><p><strong>Carb-loading approach:</strong> Spread familiar carbohydrate-rich foods across Thursday and Friday rather than relying on one enormous dinner. Pasta, bread, rice, and your usual tolerated foods are sensible building blocks. Avoid unusually fatty, spicy, or high-fiber choices before the race. Use a breakfast and fueling routine you have practiced.</p></div>
+    </section>
+
+    <section id="checklist">
+      <div class="card">
+        <div class="section-head"><div><div class="eyebrow">Before departure</div><h2>Booking &amp; packing checklist</h2><p class="muted small">Checkmarks are personal reminders, not booking confirmations. Saved in this browser when storage is available.</p></div><div class="check-progress"><progress id="progress" value="0" max="12" aria-label="Checklist completion"></progress><span id="count" aria-live="polite">0 / 12</span></div></div>
+        <div class="checklist">
+          <div class="check"><input type="checkbox" id="c-hotel"><label for="c-hotel"><b>Book a refundable hotel</b><span>December 18-20; correct adult count; one room versus two; taxes and parking.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-race"><label for="c-race"><b>Confirm race registration &amp; cutoffs</b><span>Verify the 12:26 p.m. finish cutoff and latest course instructions.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-train"><label for="c-train"><b>Verify and reserve the train</b><span>Friday early afternoon preferred; Sunday fallback. No departure confirmed.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-ruby"><label for="c-ruby"><b>Reserve Ruby Falls for companions</b><span>Saturday 8:30 a.m. target; prioritize returning to the race finish.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-rock"><label for="c-rock"><b>Reserve Rock City evening admission</b><span>Saturday after steak dinner; consider a flexible/later entry window.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-steak"><label for="c-steak"><b>Choose one steak restaurant</b><span>Hennen's first choice; Main Street Meats alternative. Confirm seating/service.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-food"><label for="c-food"><b>Confirm other meal arrangements</b><span>Friday lunch and Sunday brunch; Tony's is walk-in only.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-pickup"><label for="c-pickup"><b>Save packet-pickup &amp; race pins</b><span>Fleet Feet Friday 4-6:45 p.m.; Shadowlands parking lot Saturday.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-fuel"><label for="c-fuel"><b>Pack breakfast, hydration, and practiced fuel</b><span>Bring your own container; do not rely on aid-station cups or gels.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-layers"><label for="c-layers"><b>Pack warm layers &amp; a finish bag</b><span>Gloves, rain protection, dry clothes, shoes, snacks, and drink.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-meet"><label for="c-meet"><b>Agree on the one-car meetup plan</b><span>Companions keep the recovery bag and return to Covenant by 11:30 a.m.</span></label></div>
+          <div class="check"><input type="checkbox" id="c-weather"><label for="c-weather"><b>Recheck weather, hours, and travel</b><span>Skip icy trails; confirm lighting rules, admission slots, and drive conditions.</span></label></div>
+        </div>
+        <p class="small muted no-print" id="storage-note" hidden style="margin-top:16px">Browser storage is unavailable. Checkmarks will work here but may not persist after closing the page.</p>
+        <button type="button" id="reset" class="no-print" style="margin-top:20px">Reset checklist</button>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="eyebrow">Reference links</div><h2>Official sources &amp; planning notes</h2>
+      <p class="muted">Researched November 21, 2026. Published hours and prices may change. Check availability before purchasing.</p>
+      <div class="sources">
+        <a href="https://docs.google.com/document/d/1JW6sGw1QGTjp5cTkd8Opn1oYnEKwT8egN0LHT1P1I1s/edit" target="_blank" rel="noopener noreferrer">2026 race instructions</a>
+        <a href="https://wildtrails.org/lookout-mountain-trail-race/" target="_blank" rel="noopener noreferrer">Wild Trails</a>
+        <a href="https://www.chattanoogamarket.com/event/holiday-market-dec19" target="_blank" rel="noopener noreferrer">Holiday Market dates</a>
+        <a href="https://www.tvrail.com/train-rides/missionary-ridge-local/" target="_blank" rel="noopener noreferrer">Missionary Ridge Local</a>
+        <a href="https://www.seerockcity.com/hours-calendar/" target="_blank" rel="noopener noreferrer">Rock City calendar</a>
+        <a href="https://www.rubyfalls.com/plan-your-visit/faq/" target="_blank" rel="noopener noreferrer">Ruby Falls FAQ</a>
+        <a href="https://www.nps.gov/chch/learn/lookout-mountain.htm" target="_blank" rel="noopener noreferrer">Point Park &amp; Cravens House</a>
+        <a href="https://www.nps.gov/chch/planyourvisit/hours.htm" target="_blank" rel="noopener noreferrer">NPS hours</a>
+        <a href="https://www.visitchattanooga.com/blog/post/hiking-from-cravens-house-to-sunset-rock/" target="_blank" rel="noopener noreferrer">Sunset Rock hike guide</a>
+        <a href="https://www.plotaroute.com/routeprofile/2827546" target="_blank" rel="noopener noreferrer">2024 route elevation profile</a>
+      </div>
+      <p class="small muted" style="margin-top:20px"><strong>Website permissions:</strong> This page does not grant website approvals. Browser links open normally; Copilot CLI permission prompts still require user action. For a new CLI session, <code style="font-family:Consolas,'Courier New',Courier,monospace">copilot --allow-all-urls</code> allows URL access without individual prompts, subject to organization policy.</p>
+    </section>
+
+    <section id="race" data-cf-change="ch-race-essentials-at-bottom">
+      <div class="section-head"><div><div class="eyebrow">Runner reference / Saturday, December 19</div><h2>The race essentials</h2><p class="muted">Runner-specific details, kept here after the family weekend plan. Use the organizer's 2026 instructions, not the older date on the main race page.</p></div></div>
+      <div class="notice danger" data-cf-change="ch-cutoff-callout-at-bottom">
+        <p><strong>Race-day anchor: 12:26 p.m. is the published cutoff at mile 18.44.</strong> The 7:30 a.m. start allows 4 hours 56 minutes, slightly less than your five-hour estimate. Plan to meet your companions at the finish between 11:30 a.m. and 12:26 p.m. Confirm the cutoff with Wild Trails; do not assume a grace period.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><b>7:30 a.m.</b><span>18-mile start</span></div>
+        <div class="stat"><b>18.44 mi</b><span>Published finish distance</span></div>
+        <div class="stat"><b>12:26 p.m.</b><span>Published finish / mile-18.44 cutoff</span></div>
+        <div class="stat"><b>4h 56m</b><span>Maximum elapsed time to that cutoff</span></div>
+      </div>
+      <div class="card" style="padding:0">
+        <div class="scroll">
+          <table class="race-table">
+            <caption class="small muted" style="text-align:left;padding:16px 20px">Published logistics from the 2026 race instructions</caption>
+            <tbody>
+              <tr><td>Start / finish</td><td>Covenant College <strong>Shadowlands Soccer Field parking lot</strong>, not simply the main campus entrance. <a href="https://www.google.com/maps/search/?api=1&amp;query=34.9576%2C-85.3802" target="_blank" rel="noopener noreferrer">Exact start/finish map pin</a>. Coordinates: 34.9576, -85.3802.</td></tr>
+              <tr><td>Friday packet pickup</td><td><strong>4-6:45 p.m.</strong> at Fleet Feet, <strong>307 Manufacturers Road</strong>. <a href="https://www.google.com/maps/search/?api=1&amp;query=Fleet+Feet+307+Manufacturers+Road+Chattanooga" target="_blank" rel="noopener noreferrer">Directions</a>.</td></tr>
+              <tr><td>Saturday check-in</td><td><strong>6-7 a.m.</strong> at the start/finish for 18/50-mile runners. Pre-race announcements at <strong>7:20 a.m.</strong>; start at <strong>7:30 a.m.</strong></td></tr>
+              <tr><td>Aid station cutoffs</td><td><strong>Cravens House:</strong> 6.14 miles / 9:09 a.m.<br><strong>Reflection Riding:</strong> 10.97 miles / 10:26 a.m.<br><strong>Covenant:</strong> 18.44 miles / 12:26 p.m.<br>The organizer says cutoffs are strictly enforced. The roughly 16-minute/mile allowance includes stops.</td></tr>
+              <tr><td>Hydration &amp; fuel</td><td>Carry a hydration pack, bottle, or other hydration container. Expect few or no cups. Bring practiced fuel rather than relying solely on aid stations; instructions say <strong>no gels at aid stations</strong>.</td></tr>
+              <tr><td>Spectator access</td><td><strong>No crew at Cravens House.</strong> Reflection Riding has designated access and parking restrictions; do not drive beyond the pond/greenhouse. Covenant is the simplest reunion point for this itinerary.</td></tr>
+              <tr><td>Registration</td><td>Current listed 18-mile fee: <strong>$65 with shirt</strong>, or <strong>$75</strong> at packet pickup/race day. The document conflicts on the online closing date; treat <strong>Thursday December 17 at noon ET</strong> as the safe deadline and confirm with Wild Trails. Listed policy: no refunds or transfers.</td></tr>
+              <tr><td>Course elevation</td><td>Earlier calculation: approximately <strong>3,392 feet / 1,034 meters of ascent over the first 18 miles</strong> of your linked <a href="https://www.plotaroute.com/route/2827546" target="_blank" rel="noopener noreferrer">2024 route</a>, using 90-meter elevation samples. <strong>Not a verified 2026 full-course elevation total.</strong></td></tr>
+              <tr><td>Other practical notes</td><td>Porta-potties at the start/finish; none listed on the first loop's course. Headphones strongly discouraged and dogs not allowed. Confirm any current lighting requirements, course changes, weather advice, and parking instructions with the organizer.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="small muted" style="margin-top:12px"><a href="https://docs.google.com/document/d/1JW6sGw1QGTjp5cTkd8Opn1oYnEKwT8egN0LHT1P1I1s/edit" target="_blank" rel="noopener noreferrer">2026 race instructions</a> &middot; <a href="https://wildtrails.org/lookout-mountain-trail-race/" target="_blank" rel="noopener noreferrer">Wild Trails race website</a> (main page displayed 2025 information when researched).</p>
+    </section>
+  </main>
+  <footer data-cf-change="ch-christmas-footer"><div class="wrap">
+    <svg class="holiday-village" viewBox="0 0 560 120" aria-hidden="true" focusable="false" data-cf-change="ch-snowy-holiday-village">
+      <path d="M0 105q90-17 180-4t190-3 190 7" fill="none" stroke="var(--cp-border-strong)" stroke-width="2"/>
+      <g fill="var(--cp-success)">
+        <path d="m30 18 10 24 14 12-14-2 20 24-18-3 22 27H3l20-27-13 3 16-23-11 2 11-18z"/>
+        <path d="m515 11 10 26 12 11-12-1 23 23-19-3 22 34h-63l21-31-14 3 16-25-11 2 13-23z"/>
+        <path d="m300 35 7 16 10 10-10-2 19 18-15-3 17 25h-51l15-23-11 2 14-19-9 3z"/>
+      </g>
+      <g stroke="var(--cp-text)" stroke-width="2">
+        <path d="m76 58 56 5-5 36-54 3z" fill="var(--cp-surface)"/><path d="m65 63 32-39 43 44z" fill="var(--cp-accent)"/>
+        <path d="m171 50 54-5 6 57-54-3z" fill="var(--cp-surface)"/><path d="m161 55 26-42 46 36z" fill="var(--cp-accent)"/>
+        <path d="m353 53 58 3-4 46-53-2z" fill="var(--cp-surface)"/><path d="m344 58 26-40 48 43z" fill="var(--cp-accent)"/>
+        <path d="m433 68 45-4 4 35-44 3z" fill="var(--cp-surface)"/><path d="m425 70 19-32 40 27z" fill="var(--cp-accent)"/>
+      </g>
+      <g fill="var(--cp-accent)"><rect x="94" y="78" width="12" height="22" rx="5"/><rect x="194" y="74" width="13" height="27" rx="6"/><rect x="371" y="78" width="14" height="23" rx="6"/><rect x="449" y="83" width="11" height="19" rx="5"/></g>
+      <g fill="var(--cp-warning)"><rect x="112" y="76" width="8" height="9"/><rect x="181" y="60" width="8" height="10"/><rect x="211" y="57" width="8" height="10"/><rect x="392" y="68" width="8" height="10"/><rect x="465" y="75" width="7" height="8"/></g>
+      <path d="m75 53 23-26 33 32 M169 43l18-25 36 27 M352 48l19-24 36 27 M434 62l11-20 31 20" fill="none" stroke="var(--cp-surface)" stroke-width="5" stroke-linecap="round"/>
+      <g fill="var(--cp-border-strong)"><circle cx="150" cy="18" r="2"/><circle cx="259" cy="40" r="2"/><circle cx="337" cy="14" r="2"/><circle cx="482" cy="20" r="2"/><circle cx="62" cy="14" r="2"/></g>
+    </svg>
+    A Chattanooga Christmas Weekend &middot; December 18-20, 2026 &middot; All times Eastern<br>A self-contained, offline-readable itinerary. External websites and booking pages require internet access. No reservations have been made.
+  </div></footer>
+  <script>
+    (() => {
+      const buttons = [...document.querySelectorAll("[data-day]")];
+      const panels = [...document.querySelectorAll("[data-panel]")];
+      buttons.forEach(button => button.addEventListener("click", () => {
+        const day = button.dataset.day;
+        buttons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+        panels.forEach(panel => { panel.hidden = day !== "all" && panel.dataset.panel !== day; });
+      }));
+      document.getElementById("theme").addEventListener("click", () => {
+        const root = document.documentElement;
+        root.setAttribute("data-theme", root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      });
+      document.getElementById("print").addEventListener("click", () => window.print());
+      const checks = [...document.querySelectorAll(".check input")];
+      const key = "lookout-weekend-2026-checklist-v1";
+      const progress = document.getElementById("progress");
+      const count = document.getElementById("count");
+      const storageNote = document.getElementById("storage-note");
+      const update = () => {
+        const done = checks.filter(check => check.checked).length;
+        progress.max = checks.length;
+        progress.value = done;
+        count.textContent = done + " / " + checks.length;
+      };
+      try {
+        const saved = JSON.parse(localStorage.getItem(key) || "{}");
+        if (saved && typeof saved === "object") checks.forEach(check => { check.checked = saved[check.id] === true; });
+      } catch { storageNote.hidden = false; }
+      const save = () => {
+        update();
+        try { localStorage.setItem(key, JSON.stringify(Object.fromEntries(checks.map(check => [check.id, check.checked])))); }
+        catch { storageNote.hidden = false; }
+      };
+      checks.forEach(check => check.addEventListener("change", save));
+      document.getElementById("reset").addEventListener("click", () => {
+        if (window.confirm("Clear all checklist reminders? This does not cancel any reservations.")) {
+          checks.forEach(check => { check.checked = false; });
+          save();
+        }
+      });
+      update();
+    })();
+  </script>
+</body>
+</html>
